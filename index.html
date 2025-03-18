@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeInn - Secure Crypto Trading</title>
+    <script src="https://kit.fontawesome.com/215620ee36.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">
+            <a href="index.html">TradeInn</a>
+        </div>
+        <nav>
+            <div class="reg"><a href="register.html">Trade Like A Pro</a></div>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Legal</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#">Sign in</a></li>
+                <i class="fas close" onclick="closemenu()">X</i>
+            </ul>
+            <i class="fas menu" onclick="openmenu()">☰</i>
+        </nav>
+    </div>
+
+    <div class="hero">
+        <h1>The world's <span>Leading</span> Broker</h1>
+        <p>Your secure platform for cryptocurrency trading, market insights, and portfolio management.</p>
+        <input type="text" id="searchInput" placeholder="Search for a cryptocurrency...">
+        <div class="reg"><a href="register.html">Trade Like A Pro</a></div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Coin</th>
+                    <th>Price (USD)</th>
+                    <th>24h Change</th>
+                </tr>
+            </thead>
+            <tbody id="cryptoTable"></tbody>
+        </table>
+    </div>
+
+    <div class="container">
+        <div class="col1">
+            <p>Trade Indices, Stocks and more, with TradeInn - the world's Leading broker</p>
+        </div>
+        <div class="col2">
+            <a href="register.html">Trade Like A Pro</a>
+        </div>
+    </div>
+    <div class="tab-titles">
+        <p class="tab-links active-link" onclick="opentab('standard')">Standard</p>
+        <p class="tab-links" onclick="opentab('raw+')">Raw+</p>
+        <p class="tab-links" onclick="opentab('elite')">Elite</p>
+        <p class="tab-links" onclick="opentab('ctrading')">cTrading</p>
+    </div>
+    <div class="box">
+        <div class="tab-contents active-tab" id="standard" >
+            <p class="content-title"><span>Standard</span> <br>account</p>
+            <p>
+                A great account to all types of traders, with floating FX Spreads
+                from 1.2pips via MT4/MT5 and mirco lot lot trading available. 
+            </p>
+            <a href="#" class="account-link">Open account</a>
+        </div>
+        <div class="tab-contents" id="raw+">
+            <p class="content-title"><span>Raw+</span><br> account</p>
+            <p>
+                Get VIP treatment with ZERO spreads (for 90%+ of the
+                trading day) + low commission  (nax 3.5 USD per lot per
+                side) MT4/MT5
+            </p>
+            <a href="#" class="account-link">Open account</a>
+        </div>
+        <div class="tab-contents" id="elite">
+            <p class="content-title"><span>Elite</span><br>account</p>
+            <p>
+                Why be VIP when you can be ELITE? Just like Raw+, you will
+                benefit from ZERO spreads (for 99%+ of the trading day) +
+                low commission (max 3.5 USD per lot per side) and earn
+                rebates of up to 21% of your commissions! MT4/MT5
+            </p>
+            <a href="#" class="account-link">Open account</a>
+        </div>
+        <div class="tab-contents" id="ctrading">
+            <p class="content-title"><span>cTrading</span><br>account</p>
+            <p>
+                Use the ctrader range and get ultra-low spreads
+                from 0.2 with a competitive commission of $35 per $1 million
+                traded.
+            </p>
+            <a href="#" class="account-link">Open account</a>
+        </div>
+    </div>
+
+    <div class="contain">
+        <div class="row">
+            <div class="col-1">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-title">
+                    <p>TIGHT SPREADS</p>
+                </div>
+                <div class="col-head">
+                    <p>From 0</p>
+                </div>
+                <div class="col-para">
+                    <p>Your trading cost stay predictable and low, even in <br>
+                        high volatility markets.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hold">
+        <div class="tab-titles">
+            <ul class="nav">
+                <li class="tab-links active-link" onclick="opentab('forex')">Forex</li>
+                <li class="tab-links" onclick="opentab('metals')">Metals</li>
+                <li class="tab-links" onclick="opentab('futures')">Futures</li>
+                <li class="tab-links" onclick="opentab('indices')">Indices</li>
+                <li class="tab-links" onclick="opentab('shares')">Shares</li>
+                <li class="tab-links" onclick="opentab('energy')">Energy</li>
+                <li class="tab-links" onclick="opentab('etfs')">ETFs</li>
+            </ul>
+        </div>
+    </div>
+    <div class="card">
+        <div class="tab-contents active-tab">
+            <div>
+                <img src="./images/background.png" alt="">
+            </div>
+            <div class="content">
+                <div class="content-title">
+                    <h2>Forex</h2>
+                </div>
+                <div>
+                    <p>Trade up to 50+ major & exotic currency pairs with competitive trading conditions.</p>
+                </div>
+                <div class="reg link">
+                    <a href="#">Open account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="face">
+        <div class="row">
+            <div class="col-1">
+                <p class="title">5,500,000+</p>
+                <p>client accounts</p>
+                <p class="body">TradeInn has been providing online <br>
+                    trading services to clients <span>since 2004</span> <br>
+                    and it currently serves a wide range of countries <br>
+                    worldwide.
+                </p>
+            </div>
+            <div class="col-2">
+                <p class="title">45+</p>
+                <p>awards</p>
+                <p class="body">TradeInn has received constant<br>
+                    recognition in the industry, winning <br>
+                    <span>over 45 international awards to date</span> <br>
+                    for the quality of its services.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-1">
+                <p class="title">5-star</p>
+                <p>customer support</p>
+                <p class="body">Our dedicated , <span>multilingual customer <br>
+                    support</span> team works 24/5 to provide <br>
+                    you with an exceptional level of <br>
+                    support.
+                </p>
+            </div>
+            <div class="col-2">
+                <p class="title">5</p>
+                <p>awards</p>
+                <p class="body">TradeInn operates under strict regulatory <br>
+                    oversight across multiple jurisdictions, <br>
+                    including authorisation by the <SPAN>FCA</SPAN> in <br>
+                    the UK - one of the most trusted <br>
+                    financial regulators globally.
+                </p>
+            </div>
+        </div>
+        <div class="trade">
+            <h2>Trade Like A Pro</h2>
+        </div>
+        <div>
+            <p>
+                Trade CFDs on a wide range of instruments, including <br>
+                popular FX pairs, Futures, Indices, Metals, Energy, Shares <br>
+                and ETFs and experience the global markets at your <br> 
+                fingertips.
+            </p>
+        </div>
+        <div class="reg">
+            <a href="#">Register wikt the Pro</a>
+        </div>
+    </div>
+
+    <div class="services">
+        <h2>Our Services</h2>
+        <div class="service-list">
+            <div class="service">
+                <h3>Real-Time Market Data</h3>
+                <p>Access up-to-date prices and trends for major cryptocurrencies.</p>
+            </div>
+            <div class="service">
+                <h3>Secure Trading</h3>
+                <p>Trade with confidence using our secure and fast exchange platform.</p>
+            </div>
+            <div class="service">
+                <h3>Portfolio Management</h3>
+                <p>Track your assets and manage your cryptocurrency investments with ease.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="legal">
+        <h2>Legal & Compliance</h2>
+        <p>TradeInn is a regulated trading platform committed to legal compliance and financial security.</p>
+        <ul>
+            <li>We comply with international financial regulations.</li>
+            <li>User data is securely encrypted and stored.</li>
+            <li>All trading activities are monitored for fraud prevention.</li>
+            <li>By using TradeInn, you agree to our <a href="#">Terms & Conditions</a>.</li>
+        </ul>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <p><span>F</span> &copy; 2004 - 2025 TradeInn. All rights reserved.</p>
+            <div class="icons">
+                <a href="#"><i class="fas facebook">F</i></a>
+                <a href="#"><i class="fas linkedin">L</i></a>
+                <a href="#"><i class="fas twitter">X</i></a>
+                <a href="#"><i class="fas youtube">Y</i></a>
+                <a href="#"><i class="fas telegram">T</i></a>
+                <a href="#"><i class="fas instagram">I</i></a>
+            </div>
+        </div>
+        <div class="rows">
+            More ways to reach us <a href="contact.html">Contact Us</a><a href="tel">+1234567890</a> (24/5). <br>
+            TradeInn UK Ltd.
+        </div>
+        <div class="foot">
+            <div class="block">
+                <h3>Trading</h3>
+                <p>TRADE WITH TRADEINN</p>
+                <hr>
+                <div class="lists">
+                    <li><a href="#">Pro Conditions</a></li><br>
+                    <li><a href="#">Open trading account</a></li><br>
+                    <li><a href="#">Pricing models</a></li><br>
+                    <li><a href="#">Funding & Withdrawals Conditions</a></li><br>
+                    <li><a href="#">PAMM Accounts</a></li><br>
+                </div>
+            </div>
+            <div class="block">
+                <h3>Markets & Tools</h3>
+                <p>MARKETS INSTRUMENTS</p>
+                <hr>
+                <div class="lists">
+                    <li><a href="#">Forex</a></li><br>
+                    <li><a href="#">Shares</a></li><br>
+                    <li><a href="#">Energy</a></li><br>
+                    <li><a href="#">Crypto</a></li><br>
+                    <li><a href="#">Indices</a></li><br>
+                    <li><a href="#">Futures</a></li><br>
+                    <li><a href="#">Metals</a></li><br>
+                    <li><a href="#">ETFs</a></li><br>
+                </div>
+            </div>
+            <div class="block">
+                <h3>Knowledge Hub</h3>
+                <p>EDUCATIONAL MATERIALS</p>
+                <hr>
+                <div class="lists">
+                    <li><a href="#">Basics of Trading</a></li><br>
+                    <li><a href="#">Fundamental Analysis</a></li><br>
+                    <li><a href="#">Technical analysis</a></li><br>
+                    <li><a href="#">Traders Glossary</a></li><br>
+                    <li><a href="#">Trader Psychology</a></li><br>
+                    <li><a href="#">CME Group Education</a></li><br>
+                    <li><a href="#">Articles</a></li><br>
+                </div>
+            </div>
+            <div class="block">
+                <h3>Trading</h3>
+                <p>TRADE WITH TRADEINN</p>
+                <hr>
+                <div class="lists">
+                    <li><a href="#">Pro Conditions</a></li><br>
+                    <li><a href="#">Open trading account</a></li><br>
+                    <li><a href="#">Pricing models</a></li><br>
+                    <li><a href="#">Funding & Withdrawals Conditions</a></li><br>
+                    <li><a href="#">PAMM Accounts</a></li><br>
+                </div>
+            </div>
+        </div>
+        <div class="roses">
+            <strong>Trade Responsibly: </strong>CFDs are complex instruments and come with a high risk of losing money due to leverage. Please ensure that you understand how CFDs work before <br>
+            committing any capital.
+        </div>
+        <div class="roses">
+            <strong>TradeInn Markets Ltd </strong>is a subsidiary of TradeInn Group Ltd.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

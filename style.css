@@ -1,0 +1,523 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: white;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+/*                              header                        */
+.header {
+    width: 100%;
+    position: fixed;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+}
+
+nav .reg {
+    margin: 0 20px;
+}
+
+nav .reg a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: blue;
+    border-radius: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 20px 15px;
+    padding: 5px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px aoto;
+}
+
+nav #sidemenu {
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    padding-top: 60px;
+    z-index: 2;
+    transition: right 0.5s;
+    display: block;
+}
+
+nav .fas.close {
+    position: absolute;
+    top: 25px;
+    margin-left: 15px;
+}
+
+.reg {
+    margin: 30px;
+}
+
+.reg a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    background: blue;
+    border-radius: 20px;
+}
+
+i {
+    color: white;
+    cursor: pointer;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background-color: #202020;
+    background-image: url(/images/background.png);
+}
+
+.hero span {
+    font-size: 50px;
+}
+
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    margin-top: 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+}
+
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    border-bottom: 1px solid #333;
+}
+
+th {
+    background-color: #333;
+}
+
+.positive {
+    color: #00ff00;
+}
+
+.negative {
+    color: #ff0000;
+}
+
+.container {
+    margin: 5%;
+    padding: 20px 5%;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container p {
+    font-size: 30px;
+}
+
+.container .col1 {
+    flex-basis: 65%;
+}
+
+.container .col2 {
+    margin-left: 20%;
+    flex-basis: 30%;
+}
+
+.container .col2 a {
+    text-decoration: none;
+    background: white;
+    color: blue;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.tab-titles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-links {
+    margin: 0 10px;
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: 1px solid white;
+}
+
+.tab-links:hover {
+    background: white;
+    color: blue;
+    cursor: pointer;
+}
+
+.tab-links.active-link {
+    background: white;
+    color: blue;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
+    padding: 20px 35%;
+    text-align: center;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.services, 
+.legal {
+    padding: 40px;
+    text-align: center;
+    background-color: #181818;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.account-link {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background: blue;
+    border-radius: 20px;
+}
+
+.content-title {
+    margin: 0 0 30px;
+}
+
+.content-title span {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.contain {
+    margin: 100px 50px;
+}
+
+.contain .row {
+    display: flex;
+}
+
+.contain .row .col-1, 
+.contain .row .col-2 {
+    background: rgba(0,0,0, 1);
+    margin: 10px;
+    width: 300%;
+    padding: 50px 30px;
+}
+
+.contain .row .col-1:hover, 
+.contain .row .col-2:hover {
+    background: rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+
+.contain .col-title, 
+.col-para {
+    font-size: 14px;
+}
+
+.contain .col-head {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.hold .nav {
+    display: flex;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.hold .nav li {
+    list-style: none;
+    padding: 30px 100px;
+    margin: 0;
+    border-radius: 0;
+}
+
+.content {
+    margin-left: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+.reg.link {
+    margin: 40px 0;
+}
+
+.face {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.face .row {
+    display: flex;
+    align-items: center;
+}
+
+.face .row .col-1, 
+.face .row .col-2 {
+    background: rgba(0,0,0, 1);
+    margin: 10px;
+    width: 50%;
+    padding: 50px 30px;
+}
+
+.face .row .col-1:hover, 
+.face .row .col-2:hover {
+    background: rgba(0,0,0, 0.5);
+    cursor: pointer;
+}
+
+.face .row .col-2 {
+    margin-left: -30px;
+    border-left: 1px solid grey;
+}
+
+.face .row .col-1 .title, 
+.face .row .col-2 .title {
+    font-size: 40px;
+    margin: 0;
+}
+
+.face .row .col-1 .body, 
+.face .row .col-2 .body {
+    margin-top: 40px;
+}
+
+
+/*                                 services                          */
+.service-list {
+    display: flex;
+    justify-content: center;
+}
+
+.service {
+    margin: 20px;
+    padding: 20px;
+    width: 250px;
+    border-radius: 5px;
+    background: blue;
+}
+
+.legal li {
+    list-style: none;
+}
+
+.legal a {
+    color: white;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 20px;
+    background-color: #1a1a1a;
+}
+
+.rows a {
+    color: white;
+}
+
+.foot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot span {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.foot .icons a {
+    color: blue;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+.block {
+    display: block;
+}
+
+.block hr {
+    margin-bottom: 30px;
+}
+
+.block .lists {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.block .lists li a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+}
+
+.roses {
+    margin-top: 30px;
+}
+
+/*                      small screen                 */
+
+@media  screen and (max-width: 600px) {
+    .header {
+        width: 100%;
+    }
+    
+    .hero h1 {
+        font-size: 22px;
+    }
+
+    .container {
+        margin: 20px 10px;
+        display: block;
+        padding-bottom: 50px;
+    }
+
+    .container p {
+        font-size: 40px;
+    }
+
+    .container .col2 a {
+        font-size: 15px;
+        padding: 20px 50px;
+        border-radius: 80px;
+    }
+
+    .contain .row .col-1, 
+    .contain .row .col-2 {
+    width: 96%;
+}
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .service-list {
+        display: block;
+    }
+
+    .tab-links {
+        font-size: 12px;
+        margin: 5px;
+        padding: 10px 15px;
+    }
+
+    .hero p,
+    .tab-contents a, 
+    .tab-contents p, 
+    .reg a {
+        font-size: 11px;
+    }
+
+    .box {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contain .row {
+        display: block;
+    }
+
+    .contain {
+        margin: 20px 5px;
+    }
+
+    .face .row {
+        display: block;
+    }
+
+    .face .row .col-1, 
+    .face .row .col-2 {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .face .row .col-2 {
+        border-left: none;
+    }
+
+    .hold .tab-titles {
+        width: 100%;
+    }
+
+    .hold .nav li {
+        padding: 10px 20px;
+    }
+
+    .footer .foot {
+        display: block;
+    }
+
+    .footer .foot .icons a {
+        margin: 6%;
+    }
+}
