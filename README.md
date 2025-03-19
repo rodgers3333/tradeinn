@@ -1,2 +1,2 @@
-# tadeinn
+# tradeinn
 trading
