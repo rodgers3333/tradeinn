@@ -23,7 +23,6 @@ body {
 /*                              header                        */
 .header {
     width: 100%;
-    position: fixed;
     background-color: #1a1a1a;
     padding: 15px 20px;
     display: flex;
@@ -108,9 +107,8 @@ i {
 
 .hero {
     text-align: center;
-    padding: 50px;
-    background-color: #202020;
-    background-image: url(/images/background.png);
+    padding: 100px 50px;
+    background-image: url(/images/tradingbackground.png);
 }
 
 .hero span {
@@ -183,6 +181,7 @@ th {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .tab-links {
@@ -276,15 +275,15 @@ th {
     font-weight: 600;
 }
 
-.hold .nav {
+.hold .tab-titles {
     display: flex;
     width: 100%;
     margin-bottom: 0;
 }
 
-.hold .nav li {
+.hold .tab-titles li {
     list-style: none;
-    padding: 30px 100px;
+    padding: 20px 97px;
     margin: 0;
     border-radius: 0;
 }
@@ -506,6 +505,7 @@ th {
     }
 
     .hold .tab-titles {
+        overflow-y: scroll;
         width: 100%;
     }
 
@@ -518,6 +518,6 @@ th {
     }
 
     .footer .foot .icons a {
-        margin: 6%;
+        margin: 5%;
     }
 }
