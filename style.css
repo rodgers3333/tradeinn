@@ -28,6 +28,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
 }
 
 .logo {
@@ -147,10 +148,44 @@ th {
     color: #ff0000;
 }
 
+.rail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+    width: 100vw;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+
+.rail .train {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    white-space: nowrap;
+    animation: scrollLeft 30s linear infinite;
+}
+
+.scroll-item {
+    margin: 20px;
+    background: #0000ff;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+@keyframes scrollLeft {
+    from { transform: translateX(130%);}
+    to { transform: translateX(-130%);}
+}
+
 .container {
     margin: 5%;
     padding: 20px 5%;
-    background: blue;
+    background: #0000ff;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -509,7 +544,7 @@ th {
         width: 100%;
     }
 
-    .hold .nav li {
+    .hold .tab-titles .tab-links {
         padding: 10px 20px;
     }
 

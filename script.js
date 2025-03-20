@@ -46,3 +46,8 @@ function filterCoins() {
         row.style.display = coinName.includes(searchValue) ? '' : 'none';
     });
 }
+
+// display informtaion OF CLIENTS WHO RECENTLY GOT PAY directly from the database
+    const content = document.getElementsById("train");
+    const clone = content.cloneNode(true);
+    document.querySelector(".rail").appendChild(clone);
